@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Labo Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #1c2333;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.4rem 3rem;
+      border-bottom: 1px solid #2d3a50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #0d2b1f;
+      border: 1px solid #1a5c3a;
+      color: #34d399;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+    }
+
+    .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 6px #34d399;
+      animation: blink 2s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+
+    .card {
+      background: #232d42;
+      border: 1px solid #2d3a50;
+      border-radius: 20px;
+      padding: 3.5rem;
+      max-width: 600px;
+      width: 100%;
+      border-top: 3px solid #34d399;
+    }
+
+    .card-icon {
+      width: 56px; height: 56px;
+      background: #1c2d42;
+      border: 1px solid #2a3d5c;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .card .subtitle {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #34d399;
+      margin-bottom: 1.8rem;
+    }
+
+    .card h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    .separator {
+      border: none;
+      border-top: 1px solid #2d3a50;
+      margin-bottom: 1.8rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #94a3b8;
+    }
+
+    .card p strong {
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+
+    footer {
+      padding: 1.2rem 3rem;
+      border-top: 1px solid #2d3a50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #475569;
+    }
+
+    footer span strong {
+      color: #94a3b8;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Labo Web</div>
+    <div class="badge">
+      <div class="dot"></div>
+      Self Runner · En ligne
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="card-icon">🧪</div>
+      <p class="subtitle">Rapport de statut</p>
+      <h2>Bienvenue sur Labo Web</h2>
+      <hr class="separator"/>
+      <p>
+        Le <strong>self runner web</strong> fonctionne correctement et est pleinement opérationnel.<br/><br/>
+        L'environnement est actif, stable et prêt à l'emploi. Aucune anomalie détectée. Vous pouvez commencer à travailler en toute confiance.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Labo Web</span>
+    <span>Réalisé par <strong>LI Oliver</strong> — Classe <strong>Cyber 3.1</strong></span>
+  </footer>
+
+</body>
+</html>
